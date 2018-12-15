@@ -1,0 +1,25 @@
+chainerpruner.masks.NormMask
+============================
+
+.. currentmodule:: chainerpruner.masks
+
+.. autoclass:: NormMask
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~NormMask.__init__
+      ~NormMask.add_hook
+      ~NormMask.get_filter_norm
+      ~NormMask.get_thresholds
+   
+   
+
+   
+   
+   

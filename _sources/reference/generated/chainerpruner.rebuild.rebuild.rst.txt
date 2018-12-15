@@ -1,0 +1,6 @@
+chainerpruner.rebuild.rebuild
+=============================
+
+.. currentmodule:: chainerpruner.rebuild
+
+.. autofunction:: rebuild

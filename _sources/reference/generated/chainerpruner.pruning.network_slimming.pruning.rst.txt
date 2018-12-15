@@ -1,0 +1,6 @@
+chainerpruner.pruning.network\_slimming.pruning
+===============================================
+
+.. currentmodule:: chainerpruner.pruning.network_slimming
+
+.. autofunction:: pruning

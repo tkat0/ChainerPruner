@@ -1,0 +1,6 @@
+chainerpruner.serializers.load\_npz
+===================================
+
+.. currentmodule:: chainerpruner.serializers
+
+.. autofunction:: load_npz

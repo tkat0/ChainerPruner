@@ -1,0 +1,6 @@
+chainerpruner.rebuild.calc\_pruning\_connection
+===============================================
+
+.. currentmodule:: chainerpruner.rebuild
+
+.. autofunction:: calc_pruning_connection

@@ -1,0 +1,26 @@
+chainerpruner.Pruner
+====================
+
+.. currentmodule:: chainerpruner
+
+.. autoclass:: Pruner
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Pruner.__init__
+      ~Pruner.apply_mask
+      ~Pruner.apply_rebuild
+      ~Pruner.reinitialize
+      ~Pruner.update_mask_fun
+   
+   
+
+   
+   
+   

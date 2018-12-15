@@ -1,0 +1,23 @@
+chainerpruner.trace
+===================
+
+.. automodule:: chainerpruner.trace
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      TraceFunctionHook
+      TraceLinkHook
+   
+   
+
+   
+   
+   

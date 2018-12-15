@@ -1,0 +1,30 @@
+chainerpruner.pruning.network\_slimming.Lasso
+=============================================
+
+.. currentmodule:: chainerpruner.pruning.network_slimming
+
+.. autoclass:: Lasso
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Lasso.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Lasso.call_for_each_param
+      ~Lasso.name
+      ~Lasso.timing
+   
+   

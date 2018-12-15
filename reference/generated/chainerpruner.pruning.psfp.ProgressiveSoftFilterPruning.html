@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning &mdash; ChainerPruner 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Changelog" href="../../changelog.html" />
+    <link rel="prev" title="chainerpruner.pruning.network_slimming.Lasso" href="chainerpruner.pruning.network_slimming.Lasso.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> ChainerPruner
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../masks.html">Masks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rebuild.html">Rebuild</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../graph.html">Graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pruner.html">Pruner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../serializers.html">Serializers</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pruning.html">Pruning Algorhythm</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pruning.html#network-slimming">Network Slimming</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pruning.html#progressive-soft-filter-pruning">Progressive Soft Filter Pruning</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Other</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ChainerPruner</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Reference</a> &raquo;</li>
+        
+          <li><a href="../pruning.html">Pruning Algorhythm</a> &raquo;</li>
+        
+      <li>chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/reference/generated/chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="chainerpruner-pruning-psfp-progressivesoftfilterpruning">
+<h1>chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning<a class="headerlink" href="#chainerpruner-pruning-psfp-progressivesoftfilterpruning" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning">
+<em class="property">class </em><code class="descclassname">chainerpruner.pruning.psfp.</code><code class="descname">ProgressiveSoftFilterPruning</code><span class="sig-paren">(</span><em>model</em>, <em>args</em>, <em>target_layers</em>, <em>pruning_rate</em>, <em>stop_trigger</em>, <em>pruning_rate_decay=0.125</em>, <em>rebuild=True</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/chainerpruner/pruning/psfp/psfp.html#ProgressiveSoftFilterPruning"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>model</em>, <em>args</em>, <em>target_layers</em>, <em>pruning_rate</em>, <em>stop_trigger</em>, <em>pruning_rate_decay=0.125</em>, <em>rebuild=True</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/chainerpruner/pruning/psfp/psfp.html#ProgressiveSoftFilterPruning.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Progressive Deep Neural Networks Acceleration via Soft Filter Pruning</p>
+<p><a class="reference external" href="https://arxiv.org/abs/1808.07471">https://arxiv.org/abs/1808.07471</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>model</strong> (<em>chainer.Chain</em>) – </li>
+<li><strong>target_layers</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – </li>
+<li><strong>pruning_rate</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – sparsity. target_layerで指定した全レイヤ一律 [0, 1) 大きいほど高圧縮</li>
+<li><strong>pruning_rate_decay</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – pruning_rateのprogressiveな変化率を調整するパラメータ。論文では1/8がデフォルト
+pruning_rateの3/4のsparsityを学習のmax_iteration/epochの何%の位置に指定するか</li>
+<li><strong>trigger</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)"><em>tuple</em></a>) – weightをzeroにする頻度 (500, ‘iteration’) のように指定する。論文では(1, ‘epoch’)がデフォルト</li>
+<li><strong>stop_trigger</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)"><em>tuple</em></a>) – 学習の総iteration/epochを指定。 triggerとstop_triggerの単位はiterationかepochで合わせること</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning.__init__" title="chainerpruner.pruning.psfp.ProgressiveSoftFilterPruning.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(model,&nbsp;args,&nbsp;target_layers,&nbsp;…[,&nbsp;…])</td>
+<td>Progressive Deep Neural Networks Acceleration via Soft Filter Pruning</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">finalize</span></code>()</td>
+<td>Finalizes the extension.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code>(trainer)</td>
+<td>Initializes up the trainer state.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">serialize</span></code>(serializer)</td>
+<td>Serializes the extension state.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_name</span></code></td>
+<td>Default name of the extension.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">priority</span></code></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">trigger</span></code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chainerpruner.pruning.network_slimming.Lasso.html" class="btn btn-neutral" title="chainerpruner.pruning.network_slimming.Lasso" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, DeNA Co.,Ltd
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

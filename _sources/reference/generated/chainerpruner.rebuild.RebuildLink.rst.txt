@@ -1,0 +1,29 @@
+chainerpruner.rebuild.RebuildLink
+=================================
+
+.. currentmodule:: chainerpruner.rebuild
+
+.. autoclass:: RebuildLink
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~RebuildLink.__init__
+      ~RebuildLink.active_rebuild
+      ~RebuildLink.apply_active_rebuild
+      ~RebuildLink.apply_passive_rebuild
+      ~RebuildLink.apply_reinitialize
+      ~RebuildLink.get_computational_cost_custom_calculator
+      ~RebuildLink.passive_rebuild
+      ~RebuildLink.reinitialize
+   
+   
+
+   
+   
+   

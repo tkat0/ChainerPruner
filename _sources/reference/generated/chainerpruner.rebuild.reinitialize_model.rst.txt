@@ -1,0 +1,6 @@
+chainerpruner.rebuild.reinitialize\_model
+=========================================
+
+.. currentmodule:: chainerpruner.rebuild
+
+.. autofunction:: reinitialize_model
